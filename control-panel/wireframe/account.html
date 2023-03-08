@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="bg-body-tertiary">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm p-4 mb-5 mt-4 container rounded-pill">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto align-items-center">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Make an account</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">View / Edit</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Activities</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Cost Est.</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Vehicles</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+
+
+                    </ul>
+                    <!-- nav bar search -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark rounded-pill" type="submit">Search</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class = "container">
+    <h1 class = "mb-3">Make an Account</h1>
+    </div>
+
+    <!-- Main -->
+    <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
+
+        <h5 class = "ms-4 mt-4">Customer Information</h5>
+        
+
+        <!-- Name -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Name</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="First">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Last">
+          </div>
+
+        <!-- DOB -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">DOB</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="MM">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="DD">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="YYYY">
+        </div>
+
+        <!-- Phone number -->
+        <div class="input-group px-5 flex-nowrap mt-4">
+            <span class="input-group-text" id="addon-wrapping">Phone Number</span>
+            <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+
+        <!-- Email -->
+        <div class="input-group px-5 mb-3 mt-4">
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+          </div>
+
+        
+<!-- CARD DETAILS -->
+
+        <!-- Payment Method  / Credit Card info-->
+        <h5 class = "ms-4 mt-4">Card Details</h5>
+
+        <!-- Visa? Paypal?-->
+        <div class="input-group mb-3 mt-4 px-5">
+            <label class="input-group-text" for="inputGroupSelect01">Card Type</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Select One</option>
+              <option value="1">VISA</option>
+              <option value="2">PayPal</option>
+              <option value="3">???</option>
+            </select>
+          </div>
+
+        <!-- Card Number -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Card Number</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="#### #### #### ####">
+          </div>
+
+        <!-- CVC -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">CVC</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="###">
+          </div>
+
+        <!-- Expiration date -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Expiration Date</span>
+            <select class="form-select" id="exp-month">
+                <option selected>Month</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="3">04</option>
+                <option value="3">05</option>
+                <option value="3">06</option>
+                <option value="3">07</option>
+                <option value="3">08</option>
+                <option value="3">09</option>
+                <option value="3">10</option>
+                <option value="3">11</option>
+                <option value="3">12</option>
+              </select>
+
+              <select class="form-select" id="exp-year">
+                <option selected>Year</option>
+                <option value="1">2023</option>
+                <option value="2">2024</option>
+                <option value="3">2025</option>
+                <option value="3">2026</option>
+                <option value="3">2027</option>
+                <option value="3">2028</option>
+                <option value="3">2029</option>
+                <option value="3">2030</option>
+                <option value="3">2031</option>
+                <option value="3">2032</option>
+                <option value="3">2033</option>
+              </select>
+          </div>
+
+<!-- Billing info -->
+
+
+          <!-- Billing Address -->
+          <h5 class = "ms-4 mt-4">Billing Address</h5>
+
+          <!-- Address Lines -->
+          <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Address Line 1</span>
+            <input type="text" aria-label="First name" class="form-control">
+          </div>
+
+          <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Address Line 2</span>
+            <input type="text" aria-label="First name" class="form-control">
+          </div>
+
+          <!-- City -->
+          <div class="input-group px-5 mt-4">
+            <span class="input-group-text">City</span>
+            <input type="text" aria-label="First name" class="form-control">
+          </div>
+
+          <!-- State -->
+          <div class="input-group px-5 mt-4">
+            <span class="input-group-text">State / Province</span>
+            <select class="form-select" id="state-provice">
+                <option selected>Select One</option>
+                <option value="1">AB</option>
+                <option value="2">BC</option>
+                <option value="3">CD</option>
+              </select>
+            </div>
+
+            <!-- Zip code -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Zip / Postal Code</span>
+                <input type="text" aria-label="#####" class="form-control">
+              </div>
+
+              <!-- Country -->
+              <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Country</span>
+                <select class="form-select" id="country">
+                    <option selected>Select One</option>
+                    <option value="1">USA</option>
+                    <option value="2">Canada</option>
+                    <option value="3">Mexico</option>
+                  </select>
+                </div>
+
+
+
+
+            <button type="button" class="btn btn-outline-primary ms-5 mt-4">Make an Account</button>
+
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-body">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+
+            <hr class="my-3">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start ">
+                        <!-- Copyright -->
+                        <div class="p-3 ">
+                            © 2020 Copyright:
+                            <a class="text-body text-decoration-none"
+                                href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <!-- Facebook -->
+                        <a class="text-body text-decoration-none p-3">Home</a>
+
+                        <!-- Twitter -->
+                        <a class="text-body text-decoration-none p-3">Features</a>
+
+                        <!-- Google -->
+                        <a class="text-body text-decoration-none p-3">Pricing</a>
+
+                        <!-- Instagram -->
+                        <a class="text-body text-decoration-none p-3">FAQs</a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+            </section>
+            <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+
+    <!-- bootstrap js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</body>
+
+</html>
