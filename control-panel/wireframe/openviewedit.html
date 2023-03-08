@@ -66,20 +66,59 @@
   </header>
 
   <div class="container">
+
+    <!-- profile -->
+    <div class="card p-3 border-0 shadow p-4 mb-5 bg-body rounded">
+      <div class="row d-flex align-items-center justify-content-around">
+        <img class="rounded-circle w-25"
+          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="img">
+          <div class=" w-50 ms-4">
+            <h3>Full Name</h3>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Username</th>
+                  <td>username</td>
+                </tr>
+                <tr>
+                  <th scope="row">Email</th>
+                  <td>name@gmail.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">Phone Number</th>
+                  <td>(xxx)-xxx-xxxx</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+      </div>
+
+    </div>
+
+    <!-- reservation -->
     <div class="row d-flex justify-content-between mt-5">
+
       <h1 class="mb-5">Reservations</h1>
 
-      <!-- reservations -->
+      <!-- all reservations -->
       <div class="col-md-8 col-lg-7 col-xl-6 w-25">
 
         <!-- reservation 1 -->
         <a href="#" class="card p-3 border-0 shadow p-3 mb-5 bg-body rounded text-body text-decoration-none">
+          <h2 class="text-center mt-3">XX/XX/XXXX</h2>
           <img
             src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
             class="card-img-top" alt="img">
           <div class="card-body">
             <h5 class="card-title">Acura Integra A-Spec</h5>
-            <table class="table">
+            <table class="table table-sm">
               <thead>
                 <tr>
                   <th scope="col"></th>
@@ -106,12 +145,13 @@
 
         <a href="#"
           class="card p-3 border-0 shadow-sm opacity-75 p-3 mb-5 bg-body rounded text-body text-decoration-none">
+          <h2 class="text-center mt-3">XX/XX/XXXX</h2>
           <img
             src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
             class="card-img-top" alt="img">
           <div class="card-body">
             <h5 class="card-title">Acura Integra A-Spec</h5>
-            <table class="table">
+            <table class="table table-sm">
               <thead>
                 <tr>
                   <th scope="col"></th>
@@ -137,9 +177,10 @@
         </a>
 
       </div>
+      
+      <!-- resevation details -->
       <div class="col-md-7 col-lg-5 col-xl-5 w-75">
 
-        <!-- resevation details -->
         <div class="card p-5 h-100 border-0 shadow-sm bg-body rounded">
 
           <!-- landing content -->
@@ -149,7 +190,9 @@
               class="w-50 me-4" alt="img mx-5">
             <div class="card-body">
               <h5 class="card-title">Acura Integra A-Spec</h5>
-              <table class="table">
+              <p class="mb-0"><strong>Confirmation Number:</strong> XXXXXXXXX</p>
+
+              <table class="table mt-2">
                 <thead>
                   <tr>
                     <th scope="col"></th>
@@ -192,6 +235,7 @@
       </div>
     </div>
   </div>
+
   <!-- FOOTER -->
   <footer class="text-center text-lg-start text-body mt-5">
     <!-- Grid container -->
