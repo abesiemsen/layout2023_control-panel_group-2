@@ -2,237 +2,242 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View/Edit Reservation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View/Edit Reservation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body class="bg-body-tertiary">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm p-4 mb-5 mt-4 container rounded-pill">
-            <div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm p-4 mb-5 mt-4 container rounded-pill">
+      <div class="container">
 
-                <a class="navbar-brand" href="index.html">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto align-items-center">
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="index.html">Dashboard</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="account.html">Make an account</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="viewedit.html">View / Edit</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Activities</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Cost Est.</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Vehicles</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-                    </ul>
-                    <!-- nav bar search -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-dark rounded-pill" type="submit">Search</button>
-                    </form>
-                </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto align-items-center">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="index.html">Dashboard</a>
+            </li>
 
-            </div>
-        </nav>
-    </header>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="account.html">Make an account</a>
+            </li>
 
-    <div class="container">
-        <div class="row d-flex justify-content-between mt-5">
-            <h1 class="mb-5">Reservations</h1>
-            
-            <!-- reservations -->
-            <div class="col-md-8 col-lg-7 col-xl-6 w-25">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="viewedit.html">View / Edit</a>
+            </li>
 
-                <!-- reservation 1 -->
-                <a href="#" class="card p-3 border-0 shadow p-3 mb-5 bg-body rounded text-body text-decoration-none">
-                    <img src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl" class="card-img-top" alt="img" >
-                    <div class="card-body">
-                        <h5 class="card-title">Acura Integra A-Spec</h5>
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">Days:</th>
-                                <td>X</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Check-In:</th>
-                                <td>X</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Check-Out:</th>
-                                <td>X</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </a>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Activities</a>
+            </li>
 
-                <a href="#" class="card p-3 border-0 shadow-sm opacity-75 p-3 mb-5 bg-body rounded text-body text-decoration-none">
-                    <img src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl" class="card-img-top" alt="img" >
-                    <div class="card-body">
-                        <h5 class="card-title">Acura Integra A-Spec</h5>
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">Days:</th>
-                                <td>X</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Check-In:</th>
-                                <td>X</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Check-Out:</th>
-                                <td>X</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="col-md-7 col-lg-5 col-xl-5 w-75">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Cost Est.</a>
+            </li>
 
-                <!-- resevation details -->
-                <div class="card p-5 h-100 border-0 shadow-sm bg-body rounded">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Vehicles</a>
+            </li>
 
-                    <!-- edit button -->
-                    <div class="d-flex justify-content-end mb-2">
-                        <a href="#" class="btn ps-5 pe-5 btn-outline-danger rounded-pill ">Edit</a>
-                    </div>
-                    
-                    <!-- content -->
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl" class="w-50 me-4" alt="img mx-5">
-                        <div class="card-body">
-                            <h5 class="card-title">Acura Integra A-Spec</h5>
-                            <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">Days:</th>
-                                    <td>X</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">Miles:</th>
-                                    <td>X</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">Check-In:</th>
-                                    <td>X</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">Check-Out:</th>
-                                    <td>X</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">More Details</h5>
-                        <p class="card-text">Lots of detailed words about reservation</p>
-                    </div>
-                </div>
-            </div>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+
+          </ul>
+          <!-- nav bar search -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark rounded-pill" type="submit">Search</button>
+          </form>
         </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row d-flex justify-content-between mt-5">
+      <h1 class="mb-5">Reservations</h1>
+
+      <!-- reservations -->
+      <div class="col-md-8 col-lg-7 col-xl-6 w-25">
+
+        <!-- reservation 1 -->
+        <a href="#" class="card p-3 border-0 shadow p-3 mb-5 bg-body rounded text-body text-decoration-none">
+          <img
+            src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
+            class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Acura Integra A-Spec</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Days:</th>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <th scope="row">Check-In:</th>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <th scope="row">Check-Out:</th>
+                  <td>X</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </a>
+
+        <a href="#"
+          class="card p-3 border-0 shadow-sm opacity-75 p-3 mb-5 bg-body rounded text-body text-decoration-none">
+          <img
+            src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
+            class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Acura Integra A-Spec</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Days:</th>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <th scope="row">Check-In:</th>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <th scope="row">Check-Out:</th>
+                  <td>X</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </a>
+
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 w-75">
+
+        <!-- resevation details -->
+        <div class="card p-5 h-100 border-0 shadow-sm bg-body rounded">
+
+          <!-- landing content -->
+          <div class="d-flex align-items-center justify-content-between">
+            <img
+              src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
+              class="w-50 me-4" alt="img mx-5">
+            <div class="card-body">
+              <h5 class="card-title">Acura Integra A-Spec</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Days:</th>
+                    <td>X</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Miles:</th>
+                    <td>X</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Check-In:</th>
+                    <td>X</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Check-Out:</th>
+                    <td>X</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- edit button -->
+          <div class="d-flex justify-content-end mb-4">
+            <a href="#" class="btn ps-5 pe-5 btn-outline-danger rounded-pill ">Edit</a>
+          </div>
+
+          <!-- other content -->
+          <div class="card-body">
+            <h5 class="card-title">More Details</h5>
+            <p class="card-text">Lots of detailed words about reservation</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- FOOTER -->
-    <footer class="text-center text-lg-start text-body mt-5">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
+  </div>
+  <!-- FOOTER -->
+  <footer class="text-center text-lg-start text-body mt-5">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
 
-            <hr class="my-3">
+      <hr class="my-3">
 
-            <!-- Section: Copyright -->
-            <section class="p-3 pt-0">
-                <div class="row d-flex align-items-center">
-                    <!-- Grid column -->
-                    <div class="col-md-7 col-lg-8 text-center text-md-start ">
-                        <!-- Copyright -->
-                        <div class="p-3 ">
-                            © 2020 Copyright:
-                            <a class="text-body text-decoration-none"
-                                href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                        </div>
-                        <!-- Copyright -->
-                    </div>
-                    <!-- Grid column -->
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start ">
+            <!-- Copyright -->
+            <div class="p-3 ">
+              © 2020 Copyright:
+              <a class="text-body text-decoration-none" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                        <!-- Facebook -->
-                        <a class="text-body text-decoration-none p-3">Home</a>
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="text-body text-decoration-none p-3">Home</a>
 
-                        <!-- Twitter -->
-                        <a class="text-body text-decoration-none p-3">Features</a>
+            <!-- Twitter -->
+            <a class="text-body text-decoration-none p-3">Features</a>
 
-                        <!-- Google -->
-                        <a class="text-body text-decoration-none p-3">Pricing</a>
+            <!-- Google -->
+            <a class="text-body text-decoration-none p-3">Pricing</a>
 
-                        <!-- Instagram -->
-                        <a class="text-body text-decoration-none p-3">FAQs</a>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-            </section>
-            <!-- Section: Copyright -->
+            <!-- Instagram -->
+            <a class="text-body text-decoration-none p-3">FAQs</a>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Grid container -->
-    </footer>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
 
-    <!-- bootstrap js -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- bootstrap js -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </body>
 
