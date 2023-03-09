@@ -19,221 +19,275 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> 
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto align-items-center">
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="index.html">Dashboard</a>
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <!--Make an account
+                                view an account -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="account.html">Make an Account</a></li>
+                                    <li><a class="nav-link" href="account.html">View Account</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item px-3 ">
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Reservation
+                                </a>
+                                <!--Make a reservation,
+                                view / modify /cancel reservation
+                                Get a receipt
+                                -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="make.html">Make a Reservation</a></li>
+                                    <li><a class="nav-link" href="viewedit.html">View / Modify / Cancel</a></li>
+
+                                </ul>
+                            </div>
                         </li>
 
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="account.html">Make an account</a>
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vehicles
+                                </a>
+                                <!--Gas Vehicles
+                                Electric Vehicles
+                                moving trucks & Vans
+                                Luxury Cars
+                                -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="#">Gas Vehicles</a></li>
+                                    <li><a class="nav-link" href="#">Electric Vehicles</a></li>
+                                    <li><a class="nav-link" href="#">Moving Trucks & Vans</a></li>
+                                    <li><a class="nav-link" href="#">Luxury Cars</a></li>
+
+                                </ul>
+                            </div>
                         </li>
 
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="viewedit.html">View / Edit</a>
-                        </li>
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <!--Activities
+                                cost estimator -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="#">Activities</a></li>
+                                    <li><a class="nav-link" href="#">Cost Estimator</a></li>
 
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Activities</a>
-                        </li>
+                                </ul>
+                            </div>
 
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Cost Est.</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Vehicles</a>
-                        </li>
-
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Services</a>
                         </li>
 
 
                     </ul>
-                    <!-- nav bar search -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark rounded-pill" type="submit">Search</button>
-                    </form>
+
                 </div>
+
+                <!-- nav bar search -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark rounded-pill" type="submit">Search</button>
+                </form>
 
             </div>
         </nav>
     </header>
-    <div class = "container">
-    <h1 class = "mb-3">Make an Account</h1>
+
+    <div class="container">
+        <h1 class="mb-4">Make an Account</h1>
     </div>
 
     <!-- Main -->
     <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
 
-        <h5 class = "ms-4 mt-4">Customer Information</h5>
-        
+        <h5 class="ms-4 mt-4">Customer Information</h5>
 
-        <div class = "d-flex flex-row">
-        <!-- Name -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text">Name</span>
-            <input type="text" aria-label="First name" class="form-control" placeholder="First">
-            <input type="text" aria-label="Last name" class="form-control" placeholder="Last">
-          </div>
 
-        <!-- DOB -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text">DOB</span>
-            <input type="text" aria-label="First name" class="form-control" placeholder="MM">
-            <input type="text" aria-label="Last name" class="form-control" placeholder="DD">
-            <input type="text" aria-label="Last name" class="form-control" placeholder="YYYY">
-        </div>
-        </div>
+        <div class="d-flex flex-row">
+            <!-- Name -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Name</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="First">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="Last">
+            </div>
 
-        <div class = "d-flex flex-row">
-        <!-- Phone number -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text" id="addon-wrapping">Phone Number</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
-
-        <!-- Email -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text">Email</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-          </div>
+            <!-- DOB -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">DOB</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="MM">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="DD">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="YYYY">
+            </div>
         </div>
 
-        
-<!-- CARD DETAILS -->
+        <div class="d-flex flex-row">
+            <!-- Phone number -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text" id="addon-wrapping">Phone Number</span>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+
+            <!-- Email -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Email</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+        </div>
+
+
+        <!-- CARD DETAILS -->
 
         <!-- Payment Method  / Credit Card info-->
-        <h5 class = "ms-4 mt-4">Card Details</h5>
+        <h5 class="ms-4 mt-4">Card Details</h5>
 
-        <div class = "d-flex flex-row">
+        <div class="d-flex flex-row">
 
-        <!-- Visa? Paypal?-->
-        <div class="input-group mt-4 px-5">
-            <label class="input-group-text" for="inputGroupSelect01">Card Type</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select One</option>
-              <option value="1">VISA</option>
-              <option value="2">PayPal</option>
-              <option value="3">???</option>
-            </select>
-          </div>
+            <!-- Visa? Paypal?-->
+            <div class="input-group mt-4 px-5">
+                <label class="input-group-text" for="inputGroupSelect01">Card Type</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Select One</option>
+                    <option value="1">VISA</option>
+                    <option value="2">PayPal</option>
+                    <option value="3">???</option>
+                </select>
+            </div>
 
-        <!-- Card Number -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text">Card Number</span>
-            <input type="text" aria-label="First name" class="form-control" placeholder="#### #### #### ####">
-          </div>
+            <!-- Card Number -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Card Number</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="#### #### #### ####">
+            </div>
 
         </div>
 
-        <div class = "d-flex flex-row">
+        <div class="d-flex flex-row">
 
-        <!-- CVC -->
+            <!-- CVC -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">CVC</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="###">
+            </div>
+
+            <!-- Expiration date -->
+            <div class="input-group px-5 mt-4">
+                <span class="input-group-text">Expiration Date</span>
+                <select class="form-select" id="exp-month">
+                    <option selected>Month</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="3">04</option>
+                    <option value="3">05</option>
+                    <option value="3">06</option>
+                    <option value="3">07</option>
+                    <option value="3">08</option>
+                    <option value="3">09</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                </select>
+
+                <select class="form-select" id="exp-year">
+                    <option selected>Year</option>
+                    <option value="1">2023</option>
+                    <option value="2">2024</option>
+                    <option value="3">2025</option>
+                    <option value="3">2026</option>
+                    <option value="3">2027</option>
+                    <option value="3">2028</option>
+                    <option value="3">2029</option>
+                    <option value="3">2030</option>
+                    <option value="3">2031</option>
+                    <option value="3">2032</option>
+                    <option value="3">2033</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Billing info -->
+
+
+        <!-- Billing Address -->
+        <h5 class="ms-4 mt-4">Billing Address</h5>
+
+        <!-- Address Lines -->
         <div class="input-group px-5 mt-4">
-            <span class="input-group-text">CVC</span>
-            <input type="text" aria-label="First name" class="form-control" placeholder="###">
-          </div>
-
-        <!-- Expiration date -->
-        <div class="input-group px-5 mt-4">
-            <span class="input-group-text">Expiration Date</span>
-            <select class="form-select" id="exp-month">
-                <option selected>Month</option>
-                <option value="1">01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
-                <option value="3">04</option>
-                <option value="3">05</option>
-                <option value="3">06</option>
-                <option value="3">07</option>
-                <option value="3">08</option>
-                <option value="3">09</option>
-                <option value="3">10</option>
-                <option value="3">11</option>
-                <option value="3">12</option>
-              </select>
-
-              <select class="form-select" id="exp-year">
-                <option selected>Year</option>
-                <option value="1">2023</option>
-                <option value="2">2024</option>
-                <option value="3">2025</option>
-                <option value="3">2026</option>
-                <option value="3">2027</option>
-                <option value="3">2028</option>
-                <option value="3">2029</option>
-                <option value="3">2030</option>
-                <option value="3">2031</option>
-                <option value="3">2032</option>
-                <option value="3">2033</option>
-              </select>
-          </div>
-          </div>
-
-<!-- Billing info -->
-
-
-          <!-- Billing Address -->
-          <h5 class = "ms-4 mt-4">Billing Address</h5>
-
-          <!-- Address Lines -->
-          <div class="input-group px-5 mt-4">
             <span class="input-group-text">Address Line 1</span>
             <input type="text" aria-label="First name" class="form-control">
-          </div>
+        </div>
 
-          <div class="input-group px-5 mt-4">
+        <div class="input-group px-5 mt-4">
             <span class="input-group-text">Address Line 2</span>
             <input type="text" aria-label="First name" class="form-control">
-          </div>
+        </div>
 
-          <!-- City -->
-          <div class="input-group px-5 mt-4">
+        <!-- City -->
+        <div class="input-group px-5 mt-4">
             <span class="input-group-text">City</span>
             <input type="text" aria-label="First name" class="form-control">
-          </div>
+        </div>
 
-          <!-- State -->
-          <div class="input-group px-5 mt-4">
+        <!-- State -->
+        <div class="input-group px-5 mt-4">
             <span class="input-group-text">State / Province</span>
             <select class="form-select" id="state-provice">
                 <option selected>Select One</option>
                 <option value="1">AB</option>
                 <option value="2">BC</option>
                 <option value="3">CD</option>
-              </select>
-            </div>
+            </select>
+        </div>
 
-            <!-- Zip code -->
-            <div class="input-group px-5 mt-4">
-                <span class="input-group-text">Zip / Postal Code</span>
-                <input type="text" aria-label="zip code" class="form-control" placeholder="#####">
-              </div>
+        <!-- Zip code -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Zip / Postal Code</span>
+            <input type="text" aria-label="zip code" class="form-control" placeholder="#####">
+        </div>
 
-              <!-- Country -->
-              <div class="input-group px-5 mt-4">
-                <span class="input-group-text">Country</span>
-                <select class="form-select" id="country">
-                    <option selected>Select One</option>
-                    <option value="1">USA</option>
-                    <option value="2">Canada</option>
-                    <option value="3">Mexico</option>
-                  </select>
-                </div>
-
-
+        <!-- Country -->
+        <div class="input-group px-5 mt-4">
+            <span class="input-group-text">Country</span>
+            <select class="form-select" id="country">
+                <option selected>Select One</option>
+                <option value="1">USA</option>
+                <option value="2">Canada</option>
+                <option value="3">Mexico</option>
+            </select>
+        </div>
 
 
-            <button type="button" class="btn btn-outline-primary ms-5 mt-4 mb-3">Make an Account</button>
+
+        <div class="d-flex justify-content-center mt-5 mb-5">
+            <a href="account2.html" class="btn btn-lg btn-outline-primary ps-3 pe-3 rounded-pill">Make an Account</a>
+
+        </div>
 
 
     </div>
@@ -288,7 +342,12 @@
     <!-- bootstrap js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
