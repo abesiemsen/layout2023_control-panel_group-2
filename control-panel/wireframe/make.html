@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,35 +72,30 @@
 
     <div class="container shadow p-3 mb-5 bg-body-tertiary rounded">
 
-        <h5 class = "ms-4 mt-4">RV types</h5>
+        <h5 class = "ms-4 mt-4">Pick Up Location</h5>
 
-        <div class = "d-flex flex-row">
 
-        <div class="form-check px-5">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Class A
-            </label>
-          </div>
-          <div class="form-check px-5">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Class B
-            </label>
-          </div>
-          <div class="form-check px-5">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Class C
-            </label>
-          </div>
+
+        <div class="px-4">
+            <input class="form-control" type="text" placeholder="Please enter your pickup (return) location (Zip, City, Airport) ..." aria-label="Default input">
 
         </div>
 
 
-        <h5 class = "ms-4 mt-4">Duration of Travel</h5>
 
-        <h6 class = "ms-4 mt-4">Departure Date</h6>
+
+
+        <div class="form-check py-2 px-5">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Return to a different place
+            </label>
+          </div>
+
+
+        <h5 class = "ms-4 mt-5">Pick Up / Return Date</h5>
+
+        <h6 class = "ms-4">Pick Up Date</h6>
         <div class = "d-flex flex-row">
             <div class="input-group px-5">
                 <span class="input-group-text">Date</span>
@@ -229,19 +225,44 @@
         </div>
 
 
-        <h5 class = "ms-4 mt-4">Customer Information</h5>
+        <h5 class = "ms-4 mt-5">Vehicle Class</h5>
+
+        <div class = "d-flex flex-row">
+
+        <div class="form-check px-5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              RV Class A
+            </label>
+          </div>
+          <div class="form-check px-5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              RV Class B
+            </label>
+          </div>
+          <div class="form-check px-5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              RV Class C
+            </label>
+          </div>
+
+        </div>
+
+        <h5 class = "ms-4 mt-5">Customer Information</h5>
         
 
         <div class = "d-flex flex-row">
         <!-- Name -->
-        <div class="input-group px-5 mt-4">
+        <div class="input-group px-5">
             <span class="input-group-text">Name</span>
             <input type="text" aria-label="First name" class="form-control" placeholder="First Name">
             <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
           </div>
 
         <!-- DOB -->
-        <div class="input-group px-5 mt-4">
+        <div class="input-group px-5">
             <span class="input-group-text">Date of Birth</span>
             <input type="text" class="form-control" placeholder="MM">
             <input type="text" class="form-control" placeholder="DD">
@@ -258,7 +279,7 @@
             <div class="input-group px-5 mt-4">
                 <span class="input-group-text">Number of People</span>
                 <select class="form-select" id="exampleFormControlSelect1">
-                    <option selected>Select the number</option>
+                    <option selected>Select number</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -283,7 +304,7 @@
             <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail">
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary ms-5 mt-4">Search</button>
+        <button type="button" class="btn btn-outline-primary px-5 ms-5 mt-4 rounded-pill">Browse Vehicles</button>
 
     </div>
 
