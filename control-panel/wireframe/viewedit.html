@@ -23,42 +23,85 @@
                 </button>
 
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto align-items-center">
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="account.html">Account</a>
-                            <!--Make an account
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <!--Make an account
                                 view an account -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="account.html">Make an Account</a></li>
+                                    <li><a class="nav-link" href="account.html">View Account</a></li>
+
+                                </ul>
+                            </div>
                         </li>
 
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="viewedit.html">Reservation</a>
-                            <!--Make a reservation,
+                        <li class="nav-item px-3 ">
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink2"
+                                    data-bs-toggle="dropdown" aria-expanded="false" >
+                                    Reservation
+                                </a>
+                                <!--Make a reservation,
                                 view / modify /cancel reservation
                                 Get a receipt
-                            -->
+                                -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="account.html">Make a Reservation</a></li>
+                                    <li><a class="nav-link" href="viewedit.html">View / Modify / Cancel</a></li>
+
+                                </ul>
+                            </div>
                         </li>
 
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Vehicles</a>
-                            <!--Gas Vehicles
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink3"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vehicles
+                                </a>
+                                <!--Gas Vehicles
                                 Electric Vehicles
                                 moving trucks & Vans
                                 Luxury Cars
-                             -->
+                                -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="#">Gas Vehicles</a></li>
+                                    <li><a class="nav-link" href="#">Electric Vehicles</a></li>
+                                    <li><a class="nav-link" href="#">Moving Trucks & Vans</a></li>
+                                    <li><a class="nav-link" href="#">Luxury Cars</a></li>
+
+                                </ul>
+                            </div>
                         </li>
 
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Services</a>
-                            <!--Activities
+                            <div class="dropdown">
+                                <a class="text-body text-decoration-none" href="#" role="button" id="dropdownMenuLink4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <!--Activities
                                 cost estimator -->
+                                <ul class="dropdown-menu border-0 p-2 pt-4 shadow-sm" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="nav-link" href="#">Activities</a></li>
+                                    <li><a class="nav-link" href="#">Cost Estimator</a></li>
+
+                                </ul>
+                            </div>
+
                         </li>
 
 
                     </ul>
-                    
+
                 </div>
-                
+
                 <!-- nav bar search -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
@@ -82,8 +125,8 @@
                     <!-- confirmation number -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form1Example13">Confirmation Number</label>
-                        <input type="password" id="form1Example13" class="form-control form-control-lg rounded-pill" />
-                      
+                        <input type="text" id="form1Example13" class="form-control form-control-lg rounded-pill" />
+
                     </div>
 
                     <h5 class="mb-4 text-secondary">OR</h5>
@@ -91,22 +134,22 @@
                     <!-- account number/email -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form1Example23">Account number or Email</label>
-                        <input  type="email" id="form1Example23" class="form-control form-control-lg rounded-pill" />
-                        
+                        <input type="email" id="form1Example23" class="form-control form-control-lg rounded-pill" />
+
                     </div>
 
                     <!-- confirmation number -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form1Example13">Phone Number</label>
-                        <input type="password" id="form1Example15" class="form-control form-control-lg rounded-pill" />
-                      
+                        <input type="text" id="form1Example15" class="form-control form-control-lg rounded-pill" />
+
                     </div>
 
                     <!-- Submit button -->
                     <div class="d-flex justify-content-center pt-3">
                         <a href="openviewedit.html" class="btn btn-outline-danger rounded-pill ps-5 pe-5">Submit</a>
                     </div>
-                   
+
 
                 </form>
             </div>
@@ -159,6 +202,12 @@
     <!-- bootstrap js -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 
 </body>
 
