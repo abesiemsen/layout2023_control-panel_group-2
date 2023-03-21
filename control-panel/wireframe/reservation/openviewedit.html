@@ -118,7 +118,7 @@
     <div class="card p-3 border-0 shadow p-4 mb-5 bg-body rounded">
       <div class="row d-flex align-items-center justify-content-around">
         <img class="rounded-circle w-25"
-          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="img">
+          src="https://chubstr.com/wp-content/uploads/2022/04/andy-neal-plus-size-hiker-1.webp" alt="img">
         <div class=" w-50 ms-4">
           <h3>John Smith</h3>
           <table class="table table-borderless">
@@ -149,7 +149,7 @@
           </table>
 
           <!-- edit button -->
-          <a href="" class="btn btn-outline-danger rounded-pill ms-2 ps-4 pe-4 stretched-link">Edit</a>
+          <a href="" class="btn btn-outline-danger rounded-pill ms-2 ps-4 pe-4">Edit</a>
 
         </div>
 
@@ -161,8 +161,8 @@
     <div class="row d-flex justify-content-between mt-5">
 
       <div class="d-flex">
-        <h1 class="mb-5">Reservations by</h1>
-        <h1 class="ms-2 text-muted">John</h1>
+        <h1 class="mb-5 pt-5">Reservations by</h1>
+        <h1 class="ms-2 text-muted pt-5">John</h1>
       </div>
 
       <!-- all reservations -->
@@ -240,15 +240,27 @@
       <div class="col-md-7 col-lg-5 col-xl-5 w-75">
 
         <div class="card p-5 h-100 border-0 shadow-sm bg-body rounded">
-
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn ps-4 pe-4 btn-outline-danger rounded-pill ">Edit</a>
+          </div>
+         
           <!-- landing content -->
           <div class="d-flex align-items-center justify-content-between">
-            <img
-              src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl"
-              class="w-50 me-4" alt="img mx-5">
+            <div class="w-50 me-4">
+              <img
+              src="https://dealerimages.dealereprocess.com/image/upload/c_limit,f_auto,fl_lossy/v1/svp/dep/23acuraintegraaspeccvthb5t/acura_23integraaspeccvthb5t_angularfront_platinumwhitepearl" class="w-100" alt="img mx-5">
+              <a href="#" class="btn w-100 btn-outline-primary rounded-pill ">View vehicle details</a>
+            </div>
+          
             <div class="card-body">
-              <h3 class="card-title">Acura Integra A-Spec</h3>
-              <p class="mb-0"><strong>Confirmation Number:</strong> a-3957295807</p>
+              <div class="d-flex justify-content-between mb-4">
+                <div>
+                  <h3 class="card-title">Acura Integra A-Spec</h3>
+                  <p class="mb-0"><strong>Confirmation Number:</strong> a-3957295807</p>
+                </div>
+               
+              </div>
+              
 
               <table class="table mt-2">
                 <thead>
@@ -258,6 +270,12 @@
                   </tr>
                 </thead>
                 <tbody>
+
+                  <tr>
+                    <th scope="row">Days:</th>
+                    <td>6</td>
+                  </tr>
+
                   <tr>
                     <th scope="row">Check-In:</th>
                     <td>3/20/2023</td>
@@ -266,46 +284,31 @@
                     <th scope="row">Check-Out:</th>
                     <td>3/26/2023</td>
                   </tr>
-                  <tr>
-                    <th scope="row">Days:</th>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Miles:</th>
-                    <td>45</td>
-                  </tr>
+
 
                 </tbody>
               </table>
             </div>
           </div>
 
-          <!-- edit button -->
-          <div class="d-flex justify-content-end mb-4">
-            <a href="#" class="btn ps-4 pe-4 btn-outline-danger rounded-pill ">Edit</a>
-          </div>
 
           <!-- other content -->
           <div class="card-body">
 
-            <a href="#" class="btn ps-4 pe-4 btn-outline-primary rounded-pill ">View vehicle details</a>
-
-            <h3 class="card-title">Location</h3>
+            
+            <h3 class="card-title mb-3 mt-5">Location</h3>
             <!--Google map-->
-            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-              <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                style="border:0" allowfullscreen></iframe>
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.3398238075!2d-87.87239032071729!3d41.83390324900592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1679360487788!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <a href="#" class="btn px-4 btn-outline-primary rounded-pill mt-3 mb-5">Get directions</a>
 
-            <!--Google Maps-->
-            <a href="#" class="btn ps-4 pe-4 btn-outline-primary rounded-pill ">Get directions</a>
-
-            <h3> Pricing </h3>
-            <div class="d-flex justify-content-between">
+            <h3 class="mb-3"> Pricing </h3>
+            <div class="d-flex justify-content-between w-50">
               <h6>Total Price</h6>
               <h6> $100 </h6>
             </div>
-            <a href="#" class="btn ps-4 pe-4 btn-outline-primary rounded-pill ">View details and receipt</a>
+            <a href="#" class="btn ps-4 pe-4 btn-outline-primary rounded-pill mt-3 mb-5">View details and receipt</a>
           </div>
 
           <!-- delete button -->
