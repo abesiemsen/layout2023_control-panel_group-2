@@ -131,16 +131,16 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Account Number</th>
-                <td>A9318396E</td>
+                <th scope="row">Account #</th>
+                <td>A93E6</td>
               </tr>
               <tr>
                 <th scope="row">Email</th>
                 <td>john_smith@gmail.com</td>
               </tr>
               <tr>
-                <th scope="row">Phone Number</th>
-                <td>(314)-426-1890</td>
+                <th scope="row">Phone #</th>
+                <td>(314) 426-1890</td>
               </tr>
               <tr>
                 <th scope="row">Address</th>
@@ -153,10 +153,37 @@
 
         </div>
 
+        <div class = "ms-5 ps-5">
+
             <div class = "d-flex flex-row mt-4">
                 <div>
             <h5 class="ms-3 mt-4 px-4">Customer Information</h5>
-            <form>
+            
+            <form class = px-5>
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Name</th>
+                        <td>John Smith</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Password</th>
+                        <td>*********</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Date of Birth</th>
+                        <td>Mar 6th, 1977</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
                 <div class="form-group row px-5 mt-3">
                   <label for="staticEmail" class="col-sm-5 col-form-label fw-bold">Name</label>
                   <div class="col-sm-10">
@@ -173,14 +200,40 @@
                 <div class="form-group row px-5 mt-3">
                     <label for="staticEmail" class="col-sm-5 col-form-label fw-bold">Date of Birth</label>
                     <div class="col-sm-10">
-                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Mar 6th, 1977">
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="March 6th, 1977">
                     </div>
                   </div>
               </form>
             </div>
             <div class = ms-5>
-                <h5 class="ms-3 mt-4">Card Details</h5>
-                <form>
+                <h5 class=" mt-4">Card Details</h5>
+                <form class= px-2>
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Card Type</th>
+                            <td>MasterCard</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Card Number</th>
+                            <td>**** **** **** 2314</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Expiration Date</th>
+                            <td>May 4th, 2026</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+
+
                     <div class="form-group row px-5 mt-3">
                       <label for="staticEmail" class="col-sm-5 col-form-label fw-bold">Card Type</label>
                       <div class="col-sm-10">
@@ -188,9 +241,13 @@
                       </div>
                     </div>
                     <div class="form-group row px-5 mt-3">
-                      <label for="inputPassword" class="col-sm-5 col-form-label fw-bold">Card Number</label>
+                      <label for="inputPassword" class="col-sm-5 col-form-label fw-bold">Card #</label>
                       <div class="col-sm-10">
+<<<<<<< HEAD
+                        <input type="password" class="form-control-plaintext" id="inputPassword" placeholder="6678 7721 2819 1234">
+=======
                         <input type="password" class="form-control-plaintext" id="inputPassword" placeholder="**** **** **** 2314">
+>>>>>>> cd292f83c5513d7c8bf5834238caf448d2dcceb7
                       </div>
                     </div>
     
@@ -230,7 +287,7 @@
                   </div>
 
                   <div class="form-group row px-5 mt-3">
-                    <label for="staticEmail" class="col-sm-5 col-form-label fw-bold">Zip/Postal Code</label>
+                    <label for="staticEmail" class="col-sm-5 col-form-label fw-bold">Zip Code</label>
                     <div class="col-sm-10">
                       <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="63130">
                     </div>
@@ -273,6 +330,7 @@
       <a href="" class="btn btn-outline-danger rounded-pill mx-auto d-block w-50 mt-5 py-3 px-2 ps-4 pe-5">Edit</a>
 
     </div>
+  </div>
 
 
 
